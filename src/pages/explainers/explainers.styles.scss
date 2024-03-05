@@ -1,0 +1,32 @@
+.explainer-main{
+    background-color: white;
+ 
+    // .subtitle{
+    //     z-index:100;
+    //     position: relative;
+    //     text-align: center;
+    //     color: black;
+    //     font-size: 30px;
+    //     text-align: center;
+    
+    // }
+    .iframeContainer{
+        position: relative;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 10px 10px;
+        z-index: 100;
+        margin-bottom:30px;
+        iframe{
+            margin:10px 0;
+            height:45vw;
+            max-height:420px;
+            @media only screen and (max-width: 600px) {
+                height:205px;
+                
+            }
+        }
+    }
+}

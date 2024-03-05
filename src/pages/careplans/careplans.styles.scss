@@ -1,0 +1,160 @@
+.seo-main{
+    background-color: white;
+    .subtitle{
+        @media only screen and (max-width: 950px) {
+            margin-top:-10px;
+            font-size:18px;
+        }
+    
+    }
+ 
+   .care-plans-container{
+    z-index:1000;
+    position: relative;
+    background-image: url(../../assets/city-background.jpg);
+    background-position: center center;
+    background-size: cover;
+
+   
+    .overlay{
+        padding:5vw 5px;
+        background-color: #00000059;
+        height: 100%;
+        width: 100%;
+        .container{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            @media only screen and (max-width: 950px) {
+                margin:0;
+                max-width:100%;
+
+            }
+           
+            .custom-table{
+                
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                @media only screen and (max-width: 950px) {
+                   flex-wrap: wrap;
+                }
+               .table-column{
+                    border:1px solid white;
+                    border-radius:5px;
+                    width:15vw;
+                    min-width:180px;
+                    margin:5px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    @media only screen and (max-width: 950px) {
+                        max-width:100%;
+                        width:400px;
+                        span{
+                            display:inline-block !important;
+                        }
+                        
+                    }
+                    @media only screen and (max-width: 769px) {
+                        width:100%;
+                    }
+                    .header-container{
+                        border-radius:5px 5px 0 0;
+                        width:100%;
+                        background-color: #fbb929;
+                        height:220px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        font-size:25px;
+                        font-weight: 600;
+                        align-items: center;
+                        text-align: center;
+                        i{
+                            margin-bottom:10px;
+                            font-size:40px;
+                        }
+                       .box{
+                            margin-top: 10px;
+                            background:white;
+                            padding:10px 20px;
+                            border-radius:5px;
+                            font-size:14px;
+                            h2{
+                                font-size:20px;
+                                margin:0;
+                            }
+                       } 
+                    }
+                    .column-container{
+                        padding:0 10px; 
+                        background:#E3E3E3;
+                        height:45px;
+                        width: 100%;
+                        justify-content: center;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        align-items: center;
+                        font-size: 14px;
+                        &.large {
+                            height:100px;
+                            div{
+                                margin-bottom:10px;
+                            }
+                        }
+                        span{
+                            display:none;
+                            font-weight:500;
+                        }
+                        &.black{
+                            color:white !important;
+                            height:150px;
+                            display: flex;
+                            flex-direction: column;
+                            background-color: rgba(30, 30, 30, 0.857);
+                            span{
+                                font-weight: 400;
+                                display:inline-block !important;
+                            }
+                          
+                        }
+                        button{
+                            font-size:18px;
+                            padding:8px 25px;
+                            border-radius:5px;
+                            margin-bottom:5px;
+                            background-color: #fbb929;
+
+                        }
+                        &:nth-child(even){
+                            background-color: #f3f3f3;
+                        }
+                    }
+                    &:first-of-type{ 
+                        @media only screen and (max-width: 950px) {
+                            display:none;
+                        }
+                        .column-container{
+                            font-size:14px;
+                            align-items: flex-start;
+                            text-align: left;
+                            &.black{
+                                background-color: #f3f3f3 !important;
+                            }
+                        }
+                       
+                    }
+               }
+
+              
+       
+            }
+         
+           
+        }
+    }
+   }
+}

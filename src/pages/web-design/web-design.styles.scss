@@ -1,0 +1,279 @@
+
+.design-main {
+     .yellow {
+        color: #fdc401;
+    }
+    .title{
+        background:white;
+        height:fit-content;
+        .titleHeader{
+            width:100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom:20px;
+        }
+        .laptop{
+            margin-top:10px;
+            width:100% !important;
+            height:40vw;
+            min-height:250px;
+            object-fit:contain;
+        }
+    }
+    .headline{
+        padding:30px;
+        display: flex;
+        justify-content: center;
+        height:fit-content;
+        background-color: #000000;
+        background-image: url(../../assets/washington-background.jpg);
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
+        transition: #000000 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        padding: 30px 0px 30px 0px;
+    
+        
+        .overlay{
+            background-color: #000000;
+            opacity: 0.7;
+            transition: #000000 0.3s, border-radius 0.3s, opacity 0.3s;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+     
+        .headlineContent{
+            width:1200px;
+            max-width:100%;
+            text-align: center;
+            position: relative;
+            top:0;
+            opacity: 1;
+            font-size:20px;
+            height:fit-content;
+            color:white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding:30px;
+            align-items: center;
+            @media only screen and (max-width: 768px) {
+                font-size: 14px;
+                
+            }
+            div:first-of-type{
+                color: #FFFFFF;
+                font-size: 35px;
+                background-color: transparent !important;
+                font-weight: 700;
+                line-height: 1.7em;
+                margin-bottom:1em;
+                @media only screen and (max-width: 768px) {
+                    font-size: 20px;
+                    
+                }
+            }
+            .nobackground{
+                background-color: transparent;
+            }
+        }
+    }
+
+    .pointers{
+        padding:3vw 20px;
+        min-height: fit-content;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .icon{
+            width:50px;
+            margin-top:-60px;
+        }
+        .pointer-image{
+            width:50%;
+            min-width:300px;
+            object-fit: contain;
+            
+        }
+        .services{
+            max-width:100%;
+            width:700px;
+        }
+        .service{
+         
+            display: flex;
+            align-items: center;
+            margin:40px 0;
+           
+            .service-content{
+                width:100%;
+                margin-left:30px;
+                span{
+                    font-weight:100;
+                }
+                button{
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+              
+            }
+        }
+    
+        
+    
+        
+    }
+    .spec-heading{
+        font-size:18px;
+        font-weight:600;
+    }
+    .specifications , .process{
+        max-width: 100%;
+        margin:50px 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .spec-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width:100%;
+            .spec{
+                width:400px;
+                max-width:100%;
+                line-height:2;
+                padding:20px;
+                margin:10px;
+                text-align: center;
+                .icon{
+                    width:30px;
+                    height:30px;
+                }
+               
+            }
+            .laptop{
+                margin-left:-30px;
+                width:250px !important;
+            }
+        }
+    }
+    .process{
+        .spec-container{
+         
+            max-width: 100%;
+            .spec{
+                width:470px !important;
+            }
+          
+        }
+        .icon{
+            width:60px !important;
+            height:60px !important;
+        }
+    }
+    .stats{
+        min-height:fit-content;
+        padding:calc(3vw + 20px) 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;   
+        background-color: transparent;
+        background-image: radial-gradient(at center left, #FDC40199 21%, #F3BC00 69%);
+        .stat{
+            height:150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color:white;
+            justify-content: space-between;
+            font-weight: 600;
+            @media only screen and (max-width: 768px) {
+                height:130px;
+                font-size: 12px; 
+            }
+            .image-container{
+                width:55px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border:2px solid white;
+                border-radius: 50%;
+                height:55px;
+                @media only screen and (max-width: 768px) {
+                    height:40px;
+                    width:40px;
+                }
+                img{
+                    height:22px;
+                    @media only screen and (max-width: 768px) {
+                      height:15px
+                    }
+                }
+                
+            }
+            .stat-heading{
+                font-size:30px;
+                font-weight:700;
+                @media only screen and (max-width: 768px) {
+                    font-size: 20px; 
+                }
+            }
+        }
+
+    }
+    .technologies-container{
+        padding:40px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        .technologies{
+            padding:20px 40px;
+            margin-bottom:20px;
+            display: flex;
+            width:100%;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: space-between;
+            @media only screen and (max-width: 550px) {
+                justify-content: center;
+                padding:0;
+                img{
+                   margin:10px 20px;
+                }
+            
+            }
+            @media only screen and (max-width: 376px) {
+                
+                img{
+                   margin:10px 15px;
+                }
+            
+            }
+            img{
+                height:5vw;
+                min-height:50px;
+               
+                
+            }
+            .php{
+                height:4vw;
+                min-height:40px;
+                padding-top:20px;
+
+            }
+        }
+    }
+}

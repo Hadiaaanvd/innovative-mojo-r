@@ -1,0 +1,118 @@
+.portfolio-main{
+    background-color: white;
+    user-select: none;
+    .heading{
+       position: relative;
+        color: #222222;
+        font-family: "Jost", Sans-serif;
+        font-size: 39px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 2.5em;
+        height: fit-content;
+        text-align: center;
+        z-index:1;
+        letter-spacing: 1.5px;
+        &:before{
+        
+            transform: rotate3d(0,0,1,45deg) scale3d(1,1,1) !important;
+            content: '';
+            position: absolute;
+            height: 17%;
+            width: 30%;
+            top: 50%;
+            margin-top: -18px;
+            left: 34%;
+            z-index: -1;
+            background: #f3f3f3;
+            transform: rotate3d(0,0,1,45deg) scale3d(0,1,1);
+            transition: transform 0.7s
+        }
+    }
+    .types {
+        
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 12px;
+        margin: 10px;
+        text-transform: uppercase;
+        position: relative;
+        transition: all 0.3s ease-out;
+        border-bottom: 2px solid transparent;
+        &.active{
+            color:#f3bf01;
+        }
+      }
+      
+      .types::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #f3bf01;
+        transition: all 0.3s ease-out;
+      }
+      
+      .types.active::before {
+        width: 100%;
+      }
+      
+      .active::before {
+        width: 100%;
+      }
+    .portfolio-container{
+        background-color: white;
+        // display:flex;
+        position: relative;
+        z-index:100;
+        text-align: center;
+        // max-width:1300px;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        .website-container{
+            margin:20px 0;
+            text-align: center;
+            font-size:18px;
+            font-weight: 600;
+        }
+        .image-container{
+          border-radius:10px;
+          margin-bottom:20px;
+          box-shadow: rgba(0, 0, 0, 0.115) 0px 14px 28px, rgba(0, 0, 0, 0.115) 0px 10px 10px;
+          cursor: pointer;
+          // width:25%;
+          transition: all 0.4s ease-in-out;
+          min-height:190px;
+          max-height:190px;
+          @media only screen and (max-width: 600px) {
+            height:180px;
+          }
+          &:hover{
+            transition: all 0.4s ease-in-out;
+            transform: scale(1.1); 
+            filter: brightness(70%);
+            
+            // background-size:110% 110%;;
+            
+          }
+          
+          img{
+                border-radius:10px;
+                object-fit: contain;
+                width:100%;
+                height:100%;
+                
+                @media only screen and (max-width: 600px) {
+                  height:100%;
+                }
+             
+            }
+            
+        }
+       
+    }
+  
+    
+}

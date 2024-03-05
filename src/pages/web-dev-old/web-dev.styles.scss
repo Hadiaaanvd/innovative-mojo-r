@@ -1,0 +1,250 @@
+
+.dev-main {
+    h1{
+        color: #FFFFFF;
+        font-family: "Helvetica", Sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 1.7em;
+        @media only screen and (max-width: 768px) {
+            font-size: 20px;
+            
+        }
+    }
+    .subtitle{
+        margin-bottom:2em;
+        z-index:100;
+        position: relative;
+        text-align: center;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+    
+    }
+    .explainers-container{
+        z-index:100;
+        position: relative;
+        display:flex;
+        justify-content: center;
+        background-color: white;
+        height:100%;
+        margin-bottom:2em;
+        @media only screen and (max-width: 1000px) {
+            max-width:100% !important;
+        }
+        @media only screen and (max-width: 768px) {
+           flex-wrap: wrap;
+        }
+        .explainer{
+            margin:10px;    
+            background-color: #F6F6F6;
+            padding:3em 4em;
+            width:50%;
+            @media only screen and (max-width: 768px) {
+                width:100% !important;
+                padding: 30px 1em;
+            }
+       
+            .explainer-heading{
+                font-size:20px;
+                font-weight:600;
+            }
+            .icon{
+                background-color: #FDC401;
+                border-radius: 50%;
+                height:60px;
+                width:60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom:20px;
+                i{
+                    font-size:32px;
+                }
+            }
+        }
+
+    }
+    .heading{
+        position: relative;
+         color: #222222;
+         font-family: "Jost", Sans-serif;
+         font-size: 45px;
+         font-weight: 700;
+         font-style: normal;
+         line-height: 2.5em;
+         height: fit-content;
+         text-align: center;
+         z-index:1;
+         letter-spacing: 1.5px;
+         &:before{
+         
+             transform: rotate3d(0,0,1,45deg) scale3d(1,1,1) !important;
+             content: '';
+             position: absolute;
+             height: 17%;
+             width: 35%;
+             top: 60%;
+            //  margin-top: -18px;
+             left: 34%;
+             z-index: -10;
+             background: #f3f3f3;
+             transform: rotate3d(0,0,1,45deg) scale3d(0,1,1);
+             transition: transform 0.7s
+         }
+         @media only screen and (max-width: 600px) {
+            font-size: 30px;
+            
+        }
+     }
+     .yellow {
+        color: #fdc401;
+    }
+  
+ 
+    .headline{
+        z-index: 100;
+        padding:30px;
+        display: flex;
+        justify-content: center;
+        height:fit-content;
+        background-color: #000000;
+        background-image: url(../../assets/background-dark.jpg);
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
+        transition: #000000 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        padding: 30px 0px 30px 0px;
+    
+        
+        .overlay{
+            background-color: #000000;
+            opacity: 0.8;
+            transition: #000000 0.3s, border-radius 0.3s, opacity 0.3s;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+        button{
+            margin-top:2em;
+            background:#fdc401;
+        }
+        .headlineContent{
+            width:1200px;
+            max-width:100%;
+            text-align: center;
+            position: relative;
+            top:0;
+            opacity: 1;
+            height:fit-content;
+            color:white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding:30px;
+            align-items: center;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.9em;
+            letter-spacing: 0.07px;
+            @media only screen and (max-width: 768px) {
+                font-size: 14px;
+                font-weight: 500;
+                padding:20px 10px;
+                line-height: 1.5em;
+                
+            }
+        
+            .noBackground{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-color: transparent;
+               
+                div{
+                    width:48%;
+                }
+                @media only screen and (max-width: 768px) {
+                    flex-direction: column;
+                    text-align: left;
+                    div{
+                        width:100%;
+                    }
+                }
+            }
+            .background-yellow{
+                margin-top:20px;
+                color:black;
+                padding:3em;
+                font-size: 18px;
+                font-weight: 400 !important;
+                background-color: #fdc401;
+                @media only screen and (max-width: 768px) {
+                    font-size: 14px;
+                    padding:20px; 
+                    text-align: left;
+                }
+            }
+
+
+        }
+
+    }
+  
+
+    .pointers-container{
+    
+        max-width:100%;
+        position: relative;
+        top:0;
+        opacity: 1;
+        height:fit-content;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding:30px;
+        align-items: center;
+        color: black;
+        font-size: 18px;
+      
+        line-height: 1.7em;
+        letter-spacing: 0.07px;
+        margin-bottom:20px;
+        @media only screen and (max-width: 768px) {
+            font-size: 14px;
+            
+        }
+        h1{
+            color:black;
+            font-size:35px;
+            @media only screen and (max-width: 768px) {
+                font-size: 20px;
+                
+            }
+        }
+        .pointers-content{
+            width:1200px;
+            max-width:100%;
+            display: flex;
+            justify-content: space-between;
+            div{
+                width:48%;
+            }
+            @media only screen and (max-width: 768px) {
+               flex-direction: column;
+               div{
+                width:100%;
+               }
+                
+            }
+          
+
+        }
+
+    }
+}

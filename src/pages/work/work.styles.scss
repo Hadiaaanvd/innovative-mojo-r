@@ -1,0 +1,98 @@
+.work-component{
+   
+    background-color: white;
+    user-select: none;
+    .portfolio-nav{
+        width:100%;
+        text-align: center;
+        user-select: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            display: block;
+            text-align: center;
+            padding:calc(10px + 1vw);
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #1C262B;
+            cursor: pointer;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            background: #fff;
+            width:50%;
+            &:hover{
+                background-color:#f3bf01;
+                color:white;
+            }
+        }
+    }
+
+    .content-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .heading{
+    
+        position: relative;
+        color: #222222;
+        font-family: "Jost", Sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        font-style: normal;
+        height: fit-content;
+        text-align: center;
+        z-index:1;
+        letter-spacing: 1.5px;
+        margin:10px 0;
+        @media only screen and (max-width: 600px) {
+            font-size: 30px;
+         
+        }
+    }
+
+    .description-container{
+        margin: 0 auto;
+        width:600px;
+        max-width:100%;
+        padding:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+  
+
+    .images-container{
+        margin:40px 0;
+        background: #e4e4e4;
+        padding:30px;
+        width:calc(100% - 60px);
+        @media only screen and (max-width: 600px) {
+           width: 100%;
+         
+        }
+        
+        img{
+            width:calc(100% - 40px);
+            margin:20px;
+            @media only screen and (max-width: 600px) {
+                margin:0;
+                width:100%;
+                margin-bottom:20px;
+             
+            }
+        }
+    }
+  
+  
+  
+    
+}
